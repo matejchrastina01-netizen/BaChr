@@ -1,14 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstraction\" />
-    <Folder Include="Implementation\" />
-  </ItemGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\UTB.Ba.Chr.Mapy.Infrastructure\UTB.BaChr.Mapy.Infrastructure.csproj" />
+	  <ProjectReference Include="..\UTB.BaChr.Mapy.Domain\UTB.BaChr.Mapy.Domain.csproj" />
+	</ItemGroup>
 
 </Project>

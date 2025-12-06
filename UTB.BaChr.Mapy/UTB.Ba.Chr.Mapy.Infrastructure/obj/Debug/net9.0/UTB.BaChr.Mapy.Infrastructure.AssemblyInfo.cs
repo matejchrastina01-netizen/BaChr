@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UTB.BaChr.Mapy.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a72f4204a5eb8a7904ba4a340ed5fbce5747bd81")]
 [assembly: System.Reflection.AssemblyProductAttribute("UTB.BaChr.Mapy.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UTB.BaChr.Mapy.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

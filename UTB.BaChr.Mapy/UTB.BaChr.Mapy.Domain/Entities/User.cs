@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
+using UTB.BaChr.Mapy.Domain.Entities.Interfaces;
 
 namespace UTB.BaChr.Mapy.Domain.Entities
 {
-    class User
+    // Důležité: public
+    public class User : IdentityUser<int>, IEntity<int>
     {
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public string? Email { get; set; }
-        public string? PasswordHash { get; set; }
-        public string? Role { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
     }
 }

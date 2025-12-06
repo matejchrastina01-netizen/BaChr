@@ -1,17 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using UTB.BaChr.Mapy.Domain.Entities.Interfaces;
 
 namespace UTB.BaChr.Mapy.Domain.Entities
 {
-    class Comment
+    public class Comment : IEntity<int>
     {
         public int Id { get; set; }
-        public Guid? PhotoId { get; set; }
-        public Guid? AuthorId  { get; set; }
-        public string? Text { get; set; }
-        public DateTime? CreatedAt { get; set; }
+
+        [Required]
+        [StringLength(1000)]
+        public string Text { get; set; }
+
+        public DateTime DateTimeCreated { get; set; } = DateTime.Now;
+
+        // Vazba na Fotku
+        [ForeignKey(nameof(Photo))]
+        public int PhotoId { get; set; }
+        public virtual Photo? Photo { get; set; }
+
+        // Vazba na Autora komentáře
+        [ForeignKey(nameof(User))]
+        public int UserId { get; set; }
+        public virtual User? User { get; set; }
     }
 }

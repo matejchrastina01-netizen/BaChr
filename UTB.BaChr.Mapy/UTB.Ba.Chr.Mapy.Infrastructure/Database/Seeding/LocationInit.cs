@@ -19,8 +19,8 @@ namespace UTB.BaChr.Mapy.Infrastructure.Database.Seeding
                 Id = 1,
                 Name = "Two Forks Lookout",
                 Description = "Lookout",
-                MapX = 0.5,
-                MapY = 0.5
+                Latitude = 44.12,   // <-- TOTO PŘIDAT
+                Longitude = -109.55 // <-- TOTO PŘIDAT
             };
 
             locations.Add(location1);
