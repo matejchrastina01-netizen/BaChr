@@ -1,61 +1,64 @@
 ﻿@model UTB.BaChr.Mapy.Application.ViewModels.RegisterViewModel
 @{
-    ViewData["Title"] = "Registrace - Firewatch Net";
+    ViewData["Title"] = "Registrace";
 }
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card bg-dark text-white border-warning">
-                <div class="card-header bg-warning text-dark">
-                    <h3>Nový strážce věže (Registrace)</h3>
-                </div>
-                <div class="card-body">
-                    <form asp-action="Register" method="post">
-                        <div asp-validation-summary="All" class="text-danger"></div>
+<div class="d-flex align-items-center justify-content-center" style="min-height: 85vh; background-color: #f8f9fa;">
+    <div class="card shadow-sm border-0" style="width: 100%; max-width: 500px; border-radius: 10px;">
+        <div class="card-body p-5">
 
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="FirstName" class="form-label">Jméno</label>
-                                <input asp-for="FirstName" class="form-control" />
-                                <span asp-validation-for="FirstName" class="text-danger"></span>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="LastName" class="form-label">Příjmení</label>
-                                <input asp-for="LastName" class="form-control" />
-                                <span asp-validation-for="LastName" class="text-danger"></span>
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label asp-for="Email" class="form-label">Email</label>
-                            <input asp-for="Email" class="form-control" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
-
-                        <div class="mb-3">
-                            <label asp-for="Username" class="form-label">Uživatelské jméno</label>
-                            <input asp-for="Username" class="form-control" />
-                            <span asp-validation-for="Username" class="text-danger"></span>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="Password" class="form-label">Heslo</label>
-                                <input asp-for="Password" class="form-control" />
-                                <span asp-validation-for="Password" class="text-danger"></span>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="ConfirmPassword" class="form-label">Potvrzení hesla</label>
-                                <input asp-for="ConfirmPassword" class="form-control" />
-                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-warning w-100">Registrovat se</button>
-                    </form>
-                </div>
+            <div class="text-center mb-4">
+                <h3 class="fw-bold text-dark">Vytvořit účet</h3>
+                <p class="text-muted small">Staňte se členem naší komunity</p>
             </div>
+
+            <form asp-action="Register" method="post">
+                <div asp-validation-summary="All" class="text-danger mb-3 small"></div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-floating">
+                            <input asp-for="FirstName" class="form-control" placeholder="Jméno" style="border-radius: 8px;" />
+                            <label asp-for="FirstName">Jméno</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-floating">
+                            <input asp-for="LastName" class="form-control" placeholder="Příjmení" style="border-radius: 8px;" />
+                            <label asp-for="LastName">Příjmení</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="Email" class="form-control" placeholder="name@example.com" style="border-radius: 8px;" />
+                    <label asp-for="Email">Emailová adresa</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="Username" class="form-control" placeholder="Login" style="border-radius: 8px;" />
+                    <label asp-for="Username">Uživatelské jméno</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="Password" class="form-control" placeholder="Heslo" style="border-radius: 8px;" />
+                    <label asp-for="Password">Heslo</label>
+                </div>
+
+                <div class="form-floating mb-4">
+                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Heslo znovu" style="border-radius: 8px;" />
+                    <label asp-for="ConfirmPassword">Potvrzení hesla</label>
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-success btn-lg fw-bold" style="border-radius: 8px;">Registrovat</button>
+                </div>
+
+                <div class="text-center">
+                    <span class="text-muted">Již máte účet?</span>
+                    <a asp-action="Login" class="text-decoration-none fw-bold ms-1">Přihlásit se</a>
+                </div>
+            </form>
         </div>
     </div>
 </div>

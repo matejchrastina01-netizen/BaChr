@@ -24,21 +24,27 @@ builder.Services.AddDbContext<MapyDbContext>(options =>
 // 2. Konfigurace Identity (Uživatelé a Role)
 builder.Services.AddIdentity<User, Role>(options =>
 {
-    // Nastavení hesel (pro vývoj volnìjší, pro produkci zpøísnit)
-    options.Password.RequiredLength = 4;
-    options.Password.RequireDigit = false;
-    options.Password.RequireNonAlphanumeric = false;
+    // Zrušíme složité požadavky na heslo pro testování
+    options.Password.RequiredLength = 3;
+    options.Password.RequireNonAlphanumeric = false; // Nemusí mít znaky jako !@#
     options.Password.RequireUppercase = false;
     options.Password.RequireLowercase = false;
+    options.Password.RequireDigit = false;
+
+    // Dùležité: Uživatel se mùže pøihlásit i bez potvrzeného emailu
+    options.SignIn.RequireConfirmedAccount = false;
 })
 .AddEntityFrameworkStores<MapyDbContext>()
 .AddDefaultTokenProviders();
 
-// Konfigurace cest pro pøesmìrování (když uživatel není pøihlášen)
+// Nastavení cookies (aby pøihlášení vydrželo)
 builder.Services.ConfigureApplicationCookie(options =>
 {
+    options.Cookie.HttpOnly = true;
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
     options.LoginPath = "/Security/Account/Login";
-    options.AccessDeniedPath = "/Security/Account/AccessDenied";
+    options.LogoutPath = "/Security/Account/Logout";
+    options.SlidingExpiration = true;
 });
 
 // 3. Registrace vlastních služeb (Dependency Injection)

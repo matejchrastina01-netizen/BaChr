@@ -2,18 +2,18 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using UTB.BaChr.Mapy.Domain.Entities;
+using UTB.BaChr.Mapy.Infrastructure.Database.Seeding; // Zde jsou naše init třídy
 using UTB.BaChr.Mapy.Infrastructure.Identity;
 
 namespace UTB.BaChr.Mapy.Infrastructure.Database
 {
-    // Dědíme z IdentityDbContext a specifikujeme naše vlastní třídy User, Role a typ klíče (int)
     public class MapyDbContext : IdentityDbContext<User, Role, int>
     {
         public MapyDbContext(DbContextOptions options) : base(options)
         {
         }
 
-        // --- Zde přidáváme tabulky (DbSety) ---
+        // --- Definice tabulek (DbSet) ---
         public DbSet<Location> Locations { get; set; }
         public DbSet<Photo> Photos { get; set; }
         public DbSet<Comment> Comments { get; set; }
@@ -22,9 +22,9 @@ namespace UTB.BaChr.Mapy.Infrastructure.Database
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(builder); // TOTO JE NUTNÉ PRO IDENTITY!
+            base.OnModelCreating(builder);
 
-            // Přejmenování tabulek Identity (aby se v DB jmenovaly hezky "Users", "Roles" atd.)
+            // Přejmenování tabulek Identity na hezčí názvy (volitelné, ale doporučené)
             builder.Entity<User>().ToTable(nameof(Users));
             builder.Entity<Role>().ToTable(nameof(Roles));
             builder.Entity<IdentityUserRole<int>>().ToTable("UserRoles");
@@ -33,11 +33,33 @@ namespace UTB.BaChr.Mapy.Infrastructure.Database
             builder.Entity<IdentityRoleClaim<int>>().ToTable("RoleClaims");
             builder.Entity<IdentityUserToken<int>>().ToTable("UserTokens");
 
-            // --- SEEDING DAT (Počáteční data pro Firewatch) ---
+            // --- KONFIGURACE VAZEB (pokud nejsou plně definované atributy) ---
 
-            // 1. Lokace
-            // 1. Lokace - Upravené souřadnice pro Leaflet mapu (Y, X)
-            // Představ si mapu jako čtverec 1000x1500.
+            // Kompozitní klíč pro vazební tabulku PhotoTag (M:N)
+            // Pokud používáš Id v entitě PhotoTag, tento řádek není nutný, ale nic nezkazí.
+            // Pokud Id nemáš, je tento řádek povinný.
+            // builder.Entity<PhotoTag>().HasKey(pt => new { pt.PhotoId, pt.TagId });
+
+            // --- DATA SEEDING (Počáteční data) ---
+
+            // 1. Role (Admin, Customer)
+            // Vytvořili jsme pro to pomocnou třídu RolesInit, nebo to můžeme dát přímo sem.
+            // Zde je varianta přímo v kódu pro jednoduchost a jistotu:
+            builder.Entity<Role>().HasData(
+                new Role { Id = 1, Name = "Admin", NormalizedName = "ADMIN" },
+                new Role { Id = 2, Name = "Customer", NormalizedName = "CUSTOMER" }
+            );
+
+            // 2. Uživatelé (Admin a Klient)
+            // Voláme metodu z UserInit.cs, kterou jsi vytvořil v Infrastructure
+            builder.Entity<User>().HasData(UserInit.GetUsers());
+
+            // 3. Přiřazení Rolí Uživatelům (Vazba UserId <-> RoleId)
+            // Voláme metodu z UserRolesInit.cs
+            builder.Entity<IdentityUserRole<int>>().HasData(UserRolesInit.GetRoles());
+
+            // 4. Lokace (Firewatch mapa)
+            // Zde jsou souřadnice, které si případně upravíš podle klikání na mapu
             builder.Entity<Location>().HasData(
                 new Location
                 {
@@ -73,20 +95,13 @@ namespace UTB.BaChr.Mapy.Infrastructure.Database
                 }
             );
 
-            // 2. Tagy (Štítky pro fotky)
+            // 5. Tagy
             builder.Entity<Tag>().HasData(
                 new Tag { Id = 1, Name = "Příroda" },
                 new Tag { Id = 2, Name = "Věž" },
                 new Tag { Id = 3, Name = "Zvěř" },
                 new Tag { Id = 4, Name = "Západ slunce" },
-                new Tag { Id = 5, Name = "Tajemství" }
-            );
-
-            // 3. Role (Admin a Customer)
-            // NormalizedName musí být VELKÝMI PÍSMENY, jinak nefunguje přihlášení
-            builder.Entity<Role>().HasData(
-                new Role { Id = 1, Name = "Admin", NormalizedName = "ADMIN" },
-                new Role { Id = 2, Name = "Customer", NormalizedName = "CUSTOMER" }
+                new Tag { Id = 5, Name = "Jezero" }
             );
         }
     }

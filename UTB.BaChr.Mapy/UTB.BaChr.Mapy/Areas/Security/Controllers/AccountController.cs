@@ -17,9 +17,6 @@ namespace UTB.BaChr.Mapy.Areas.Security.Controllers
             _signInManager = signInManager;
         }
 
-        // --- LOGIN ---
-
-        [HttpGet]
         public IActionResult Login()
         {
             return View();
@@ -28,26 +25,46 @@ namespace UTB.BaChr.Mapy.Areas.Security.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel vm)
         {
-            if (ModelState.IsValid)
+            // 1. Pokud data z formuláře nejsou validní (např. prázdné heslo), vrať chybu hned
+            if (!ModelState.IsValid)
             {
-                // Pokus o přihlášení
-                // false na konci znamená "lockoutOnFailure" - nezamknout účet při chybě
-                var result = await _signInManager.PasswordSignInAsync(vm.Username, vm.Password, vm.RememberMe, false);
-
-                if (result.Succeeded)
-                {
-                    // Přihlášení úspěšné -> přesměrovat na Home
-                    return RedirectToAction("Index", "Home", new { Area = "" });
-                }
-
-                ModelState.AddModelError(string.Empty, "Neplatné přihlašovací údaje.");
+                return View(vm);
             }
+
+            // 2. Pokus o přihlášení
+            var result = await _signInManager.PasswordSignInAsync(vm.Username, vm.Password, vm.RememberMe, false);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "Home", new { Area = "" });
+            }
+
+            // 3. DIAGNOSTIKA CHYB - Abychom věděli, proč se stránka "jen restartovala"
+            if (result.IsLockedOut)
+            {
+                ModelState.AddModelError(string.Empty, "Účet je uzamčen.");
+            }
+            else if (result.IsNotAllowed)
+            {
+                ModelState.AddModelError(string.Empty, "Přihlášení není povoleno (možná chybí potvrzení emailu).");
+            }
+            else
+            {
+                // Zkontrolujeme, jestli uživatel vůbec existuje
+                var user = await _userManager.FindByNameAsync(vm.Username);
+                if (user == null)
+                {
+                    ModelState.AddModelError(string.Empty, $"Uživatel '{vm.Username}' v databázi neexistuje!");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Zadali jste špatné heslo.");
+                }
+            }
+
             return View(vm);
         }
 
-        // --- REGISTER ---
-
-        [HttpGet]
         public IActionResult Register()
         {
             return View();
@@ -56,53 +73,40 @@ namespace UTB.BaChr.Mapy.Areas.Security.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel vm)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+                return View(vm);
+
+            var user = new User
             {
-                // Vytvoření entity User z ViewModelu
-                var user = new User
-                {
-                    UserName = vm.Username,
-                    Email = vm.Email,
-                    FirstName = vm.FirstName,
-                    LastName = vm.LastName
-                };
+                UserName = vm.Username,
+                Email = vm.Email,
+                FirstName = vm.FirstName,
+                LastName = vm.LastName
+            };
 
-                // Vytvoření uživatele v DB (Identity se postará o hashování hesla)
-                var result = await _userManager.CreateAsync(user, vm.Password);
+            var result = await _userManager.CreateAsync(user, vm.Password);
 
-                if (result.Succeeded)
-                {
-                    // DŮLEŽITÉ: Přiřazení role "Customer" novému uživateli
-                    // Ujisti se, že role "Customer" existuje v tabulce Roles (pomocí seedingu)
-                    await _userManager.AddToRoleAsync(user, "Customer");
-
-                    // Okamžité přihlášení po registraci
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home", new { Area = "" });
-                }
-
-                // Pokud nastaly chyby (např. heslo je moc slabé), vypíšeme je
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError(string.Empty, error.Description);
-                }
+            if (result.Succeeded)
+            {
+                // Každý registrovaný je Customer
+                await _userManager.AddToRoleAsync(user, "Customer");
+                await _signInManager.SignInAsync(user, isPersistent: false);
+                return RedirectToAction("Index", "Home", new { Area = "" });
             }
+
+            // Výpis chyb registrace (např. heslo je moc krátké)
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
             return View(vm);
         }
-
-        // --- LOGOUT ---
 
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home", new { Area = "" });
-        }
-
-        // --- ACCESS DENIED ---
-        [HttpGet]
-        public IActionResult AccessDenied()
-        {
-            return View();
         }
     }
 }

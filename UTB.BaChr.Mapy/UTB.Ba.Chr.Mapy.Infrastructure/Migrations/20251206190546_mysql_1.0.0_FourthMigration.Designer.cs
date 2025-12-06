@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UTB.BaChr.Mapy.Infrastructure.Database;
 
@@ -11,9 +12,11 @@ using UTB.BaChr.Mapy.Infrastructure.Database;
 namespace UTB.BaChr.Mapy.Infrastructure.Migrations
 {
     [DbContext(typeof(MapyDbContext))]
-    partial class MapyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251206190546_mysql_1.0.0_FourthMigration")]
+    partial class mysql_100_FourthMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -330,7 +333,7 @@ namespace UTB.BaChr.Mapy.Infrastructure.Migrations
                         new
                         {
                             Id = 5,
-                            Name = "Jezero"
+                            Name = "Tajemství"
                         });
                 });
 
@@ -411,7 +414,7 @@ namespace UTB.BaChr.Mapy.Infrastructure.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7ac61644-d969-4aca-963e-eecbbbac34aa",
+                            ConcurrencyStamp = "20bb2632-8d71-450a-9798-bb76403046d4",
                             Email = "admin@admin.cz",
                             EmailConfirmed = true,
                             FirstName = "Hlavní",
@@ -419,9 +422,9 @@ namespace UTB.BaChr.Mapy.Infrastructure.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ADMIN.CZ",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIZBhz8ZL+nW3qRKWR8i8yzH9yqsB7mITnnzlnnqxsbh+F6FvXzH8tLhSRdSyIJQ3Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEP9nV8XPNjBMGGsJYdVL0m/WnYNwT7zmcN1SlpdFTX84aMm2whc8+lVfmdCpKA4JZg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d2f900f7-9008-4c35-b658-3964749de711",
+                            SecurityStamp = "009352db-0722-42bd-8831-ae3b3a334cb4",
                             TwoFactorEnabled = false,
                             UserName = "admin"
                         },
@@ -429,7 +432,7 @@ namespace UTB.BaChr.Mapy.Infrastructure.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b5f09198-134e-4f87-88d2-e612ff29cd28",
+                            ConcurrencyStamp = "bb0133c7-fc9f-4b9d-a720-0d0e3eddf160",
                             Email = "klient@klient.cz",
                             EmailConfirmed = true,
                             FirstName = "Jan",
@@ -437,9 +440,9 @@ namespace UTB.BaChr.Mapy.Infrastructure.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "KLIENT@KLIENT.CZ",
                             NormalizedUserName = "KLIENT",
-                            PasswordHash = "AQAAAAIAAYagAAAAEC3kMyIDqJG4AhHEVQYvPPv9mK4FVRquJ3vzui6ZnvBuh4jlw6j1ZEnXWpHdikNdNQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEB4aiyNx34eJ+bx4c3fOr+Tt1Poann6LRPsTdz9surXScY3UI9zTm6AY8KiEKFM9GQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f7ca5b07-fe95-4889-ad85-d8c0af4d6998",
+                            SecurityStamp = "abd3f24f-b744-4b99-9266-ff379cc9941e",
                             TwoFactorEnabled = false,
                             UserName = "klient"
                         });
