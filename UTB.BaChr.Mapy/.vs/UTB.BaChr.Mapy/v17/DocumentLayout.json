@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.ba.chr.mapy.infrastructure\\migrations\\20251206180548_mysql_1.0.0_thirdmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|solutionrelative:utb.ba.chr.mapy.infrastructure\\migrations\\20251206180548_mysql_1.0.0_thirdmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.ba.chr.mapy.infrastructure\\database\\mapydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|solutionrelative:utb.ba.chr.mapy.infrastructure\\database\\mapydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.ba.chr.mapy.infrastructure\\database\\seeding\\locationinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|solutionrelative:utb.ba.chr.mapy.infrastructure\\database\\seeding\\locationinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -11,16 +39,8 @@
       "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.ba.chr.mapy.infrastructure\\migrations\\20251206163704_mysql_1.0.0_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|solutionrelative:utb.ba.chr.mapy.infrastructure\\migrations\\20251206163704_mysql_1.0.0_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.ba.chr.mapy.infrastructure\\database\\mapydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|solutionrelative:utb.ba.chr.mapy.infrastructure\\database\\mapydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0E1900F-A4D2-4312-99ED-530949AF2A22}|UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy.application\\implementation\\locationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F0E1900F-A4D2-4312-99ED-530949AF2A22}|UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy.application\\utb.bachr.mapy.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F0E1900F-A4D2-4312-99ED-530949AF2A22}|UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj|solutionrelative:utb.bachr.mapy.application\\utb.bachr.mapy.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.ba.chr.mapy.infrastructure\\database\\seeding\\locationinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|solutionrelative:utb.ba.chr.mapy.infrastructure\\database\\seeding\\locationinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.ba.chr.mapy.infrastructure\\utb.bachr.mapy.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -57,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{513D2FD7-2231-4DDF-96D4-C05DDC1138B0}|UTB.BaChr.Mapy.Domain\\UTB.BaChr.Mapy.Domain.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{513D2FD7-2231-4DDF-96D4-C05DDC1138B0}|UTB.BaChr.Mapy.Domain\\UTB.BaChr.Mapy.Domain.csproj|solutionrelative:utb.bachr.mapy.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{513D2FD7-2231-4DDF-96D4-C05DDC1138B0}|UTB.BaChr.Mapy.Domain\\UTB.BaChr.Mapy.Domain.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy.domain\\entities\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{513D2FD7-2231-4DDF-96D4-C05DDC1138B0}|UTB.BaChr.Mapy.Domain\\UTB.BaChr.Mapy.Domain.csproj|solutionrelative:utb.bachr.mapy.domain\\entities\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{513D2FD7-2231-4DDF-96D4-C05DDC1138B0}|UTB.BaChr.Mapy.Domain\\UTB.BaChr.Mapy.Domain.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy.domain\\utb.bachr.mapy.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -123,16 +135,12 @@
       "RelativeMoniker": "D:0:0:{513D2FD7-2231-4DDF-96D4-C05DDC1138B0}|UTB.BaChr.Mapy.Domain\\UTB.BaChr.Mapy.Domain.csproj|solutionrelative:utb.bachr.mapy.domain\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.bachr.mapy\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A3E149D2-34C8-47E9-AAEA-DC4AE512305A}|UTB.BaChr.Mapy\\UTB.BaChr.Mapy.csproj|solutionrelative:utb.bachr.mapy\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|c:\\users\\matej\\documents\\pokrocile webove technologie\\bachr\\utb.bachr.mapy\\utb.ba.chr.mapy.infrastructure\\migrations\\20251206173217_mysql_1.0.0_secondmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C194B4C6-1A99-4399-9047-2A8DCC94E187}|UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj|solutionrelative:utb.ba.chr.mapy.infrastructure\\migrations\\20251206173217_mysql_1.0.0_secondmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,35 +150,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20251206163704_mysql_1.0.0_FirstMigration.cs",
-              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206163704_mysql_1.0.0_FirstMigration.cs",
-              "RelativeDocumentMoniker": "UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206163704_mysql_1.0.0_FirstMigration.cs",
-              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206163704_mysql_1.0.0_FirstMigration.cs",
-              "RelativeToolTip": "UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206163704_mysql_1.0.0_FirstMigration.cs",
+              "DocumentIndex": 0,
+              "Title": "20251206180548_mysql_1.0.0_ThirdMigration.cs",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206180548_mysql_1.0.0_ThirdMigration.cs",
+              "RelativeDocumentMoniker": "UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206180548_mysql_1.0.0_ThirdMigration.cs",
+              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206180548_mysql_1.0.0_ThirdMigration.cs",
+              "RelativeToolTip": "UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206180548_mysql_1.0.0_ThirdMigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:37:05.246Z"
+              "WhenOpened": "2025-12-06T18:05:48.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "UTB.BaChr.Mapy\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-06T18:00:49.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20251206173217_mysql_1.0.0_SecondMigration.cs",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206173217_mysql_1.0.0_SecondMigration.cs",
+              "RelativeDocumentMoniker": "UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206173217_mysql_1.0.0_SecondMigration.cs",
+              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206173217_mysql_1.0.0_SecondMigration.cs",
+              "RelativeToolTip": "UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206173217_mysql_1.0.0_SecondMigration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T17:32:18.112Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LocationService.cs",
-              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\Implementation\\LocationService.cs",
-              "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\Implementation\\LocationService.cs",
-              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\Implementation\\LocationService.cs",
-              "RelativeToolTip": "UTB.BaChr.Mapy.Application\\Implementation\\LocationService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwDMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:45:28.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "LocationInit.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Database\\Seeding\\LocationInit.cs",
               "RelativeDocumentMoniker": "UTB.Ba.Chr.Mapy.Infrastructure\\Database\\Seeding\\LocationInit.cs",
@@ -182,43 +203,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MapyDbContext.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Database\\MapyDbContext.cs",
               "RelativeDocumentMoniker": "UTB.Ba.Chr.Mapy.Infrastructure\\Database\\MapyDbContext.cs",
               "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Database\\MapyDbContext.cs",
               "RelativeToolTip": "UTB.Ba.Chr.Mapy.Infrastructure\\Database\\MapyDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwEcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T15:29:12.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UTB.BaChr.Mapy.Application.csproj",
-              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj",
-              "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj",
-              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj",
-              "RelativeToolTip": "UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-06T15:39:59.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "UTB.BaChr.Mapy\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-05T15:44:43.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "ILocationService.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\Abstraction\\ILocationService.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\Abstraction\\ILocationService.cs",
@@ -230,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Program.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Program.cs",
@@ -238,12 +247,11 @@
               "RelativeToolTip": "UTB.BaChr.Mapy\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T15:51:35.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T15:51:35.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\appsettings.json",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\appsettings.json",
@@ -251,12 +259,11 @@
               "RelativeToolTip": "UTB.BaChr.Mapy\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-12T15:22:52.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T15:22:52.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "UTB.BaChr.Mapy.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj",
               "RelativeDocumentMoniker": "UTB.Ba.Chr.Mapy.Infrastructure\\UTB.BaChr.Mapy.Infrastructure.csproj",
@@ -268,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Photo.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\Photo.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Entities\\Photo.cs",
@@ -280,7 +287,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
+              "Title": "LocationService.cs",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\Implementation\\LocationService.cs",
+              "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\Implementation\\LocationService.cs",
+              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\Implementation\\LocationService.cs",
+              "RelativeToolTip": "UTB.BaChr.Mapy.Application\\Implementation\\LocationService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T15:45:28.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "UTB.BaChr.Mapy\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-05T15:55:42.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UTB.BaChr.Mapy.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj",
+              "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj",
+              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj",
+              "RelativeToolTip": "UTB.BaChr.Mapy.Application\\UTB.BaChr.Mapy.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-06T15:39:59.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "UTB.BaChr.Mapy\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAqwIIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-05T16:14:45.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20251206163704_mysql_1.0.0_FirstMigration.cs",
+              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206163704_mysql_1.0.0_FirstMigration.cs",
+              "RelativeDocumentMoniker": "UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206163704_mysql_1.0.0_FirstMigration.cs",
+              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206163704_mysql_1.0.0_FirstMigration.cs",
+              "RelativeToolTip": "UTB.Ba.Chr.Mapy.Infrastructure\\Migrations\\20251206163704_mysql_1.0.0_FirstMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T16:37:05.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\ViewModels\\LoginViewModel.cs",
@@ -292,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.Ba.Chr.Mapy.Infrastructure\\Identity\\Role.cs",
               "RelativeDocumentMoniker": "UTB.Ba.Chr.Mapy.Infrastructure\\Identity\\Role.cs",
@@ -304,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Entities\\User.cs",
@@ -316,19 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Location.cs",
-              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\Location.cs",
-              "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Entities\\Location.cs",
-              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\Location.cs",
-              "RelativeToolTip": "UTB.BaChr.Mapy.Domain\\Entities\\Location.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T16:02:44.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "UTB.BaChr.Mapy.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\UTB.BaChr.Mapy.Domain.csproj",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\UTB.BaChr.Mapy.Domain.csproj",
@@ -340,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Controllers\\HomeController.cs",
@@ -352,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Areas\\Security\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Areas\\Security\\Views\\Account\\Register.cshtml",
@@ -364,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Areas\\Security\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Areas\\Security\\Views\\Account\\Login.cshtml",
@@ -376,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Areas\\Security\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Areas\\Security\\Controllers\\AccountController.cs",
@@ -388,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\ViewModels\\RegisterViewModel.cs",
@@ -400,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "LocationController.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Areas\\Admin\\Controllers\\LocationController.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Areas\\Admin\\Controllers\\LocationController.cs",
@@ -412,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "FileUploadService.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\Implementation\\FileUploadService.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\Implementation\\FileUploadService.cs",
@@ -424,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "IFileUploadService.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Application\\Abstraction\\IFileUploadService.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Application\\Abstraction\\IFileUploadService.cs",
@@ -436,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "FileContentAttribute.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Validations\\FileContentAttribute.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Validations\\FileContentAttribute.cs",
@@ -448,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "PhotoTag.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\PhotoTag.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Entities\\PhotoTag.cs",
@@ -460,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Tag.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\Tag.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Entities\\Tag.cs",
@@ -472,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "IEntity.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\Interfaces\\IEntity.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Entities\\Interfaces\\IEntity.cs",
@@ -484,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\Comment.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Entities\\Comment.cs",
@@ -496,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "Entity.cs",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy.Domain\\Entities\\Entity.cs",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy.Domain\\Entities\\Entity.cs",
@@ -508,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\wwwroot\\js\\site.js",
@@ -517,30 +572,6 @@
               "ViewState": "AgIAAIoAAAAAAAAAAAAQwJYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-05T16:15:03.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "UTB.BaChr.Mapy\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-05T16:14:45.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "UTB.BaChr.Mapy\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\matej\\Documents\\Pokrocile webove technologie\\BaChr\\UTB.BaChr.Mapy\\UTB.BaChr.Mapy\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "UTB.BaChr.Mapy\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-05T15:55:42.811Z"
             }
           ]
         }

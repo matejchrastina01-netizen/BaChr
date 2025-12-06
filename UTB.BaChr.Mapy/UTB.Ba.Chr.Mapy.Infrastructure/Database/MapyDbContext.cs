@@ -36,38 +36,40 @@ namespace UTB.BaChr.Mapy.Infrastructure.Database
             // --- SEEDING DAT (Počáteční data pro Firewatch) ---
 
             // 1. Lokace
+            // 1. Lokace - Upravené souřadnice pro Leaflet mapu (Y, X)
+            // Představ si mapu jako čtverec 1000x1500.
             builder.Entity<Location>().HasData(
                 new Location
                 {
                     Id = 1,
                     Name = "Two Forks Lookout",
                     Description = "Henryho věž. Hlavní stanoviště s výhledem na Shoshone National Forest.",
-                    Latitude = 44.4280,
-                    Longitude = -110.5885
+                    Latitude = 313,  // Y souřadnice (střed)
+                    Longitude = 929  // X souřadnice
                 },
                 new Location
                 {
                     Id = 2,
                     Name = "Wapiti Station",
                     Description = "Oplocená biologická výzkumná stanice. Vstup přísně zakázán.",
-                    Latitude = 44.4300,
-                    Longitude = -110.5900
+                    Latitude = 626,
+                    Longitude = 411
                 },
                 new Location
                 {
                     Id = 3,
                     Name = "Jonesy Lake",
                     Description = "Klidné jezero na úpatí hor. Ideální místo pro odpočinek.",
-                    Latitude = 44.4250,
-                    Longitude = -110.5800
+                    Latitude = 398,
+                    Longitude = 203
                 },
                 new Location
                 {
                     Id = 4,
                     Name = "Thorofare Lookout",
                     Description = "Věž, kde sídlí Delilah. Viditelná pouze dalekohledem.",
-                    Latitude = 44.4350,
-                    Longitude = -110.5750
+                    Latitude = 886,
+                    Longitude = 830
                 }
             );
 

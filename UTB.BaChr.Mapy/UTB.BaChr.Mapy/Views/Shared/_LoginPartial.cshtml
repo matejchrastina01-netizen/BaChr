@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using UTB.BaChr.Mapy.Domain.Entities
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-warning fw-bold" href="#">
+                <i class="bi bi-person-fill"></i> @UserManager.GetUserName(User)
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" asp-area="Security" asp-controller="Account" asp-action="Logout">
+                Odhlásit
+            </a>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-light" asp-area="Security" asp-controller="Account" asp-action="Register">Registrace</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-warning" asp-area="Security" asp-controller="Account" asp-action="Login">Přihlášení</a>
+        </li>
+    }
+</ul>

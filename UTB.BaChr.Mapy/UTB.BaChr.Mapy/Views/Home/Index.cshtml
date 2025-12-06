@@ -1,53 +1,159 @@
 ﻿@using UTB.BaChr.Mapy.Domain.Entities
+@using System.Text.Json
 @model IList<Location>
 
 @{
-    ViewData["Title"] = "Mapa Lokací";
+    ViewData["Title"] = "Mapa";
+    var locationsJson = JsonSerializer.Serialize(Model);
 }
 
-<div class="text-center py-5 bg-dark text-warning" style="border-bottom: 5px solid #ffc107;">
-    <h1 class="display-4 fw-bold">FIREWATCH EXPLORER</h1>
-    <p class="lead text-white">Prozkoumej divočinu Wyomingu a najdi skrytá tajemství.</p>
-</div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
-<div class="container mt-5">
-    <div class="row">
-        @if (Model != null && Model.Count > 0)
-        {
+<div class="d-flex h-100">
+
+    <div class="map-sidebar bg-dark text-white d-flex flex-column" style="width: 350px; flex-shrink: 0; z-index: 1000; border-right: 1px solid #444;">
+        <div class="p-3 border-bottom border-warning bg-dark">
+            <h3 class="text-warning mb-0"><i class="bi bi-map-fill"></i> Firewatch</h3>
+        </div>
+
+        <div class="list-group list-group-flush overflow-auto flex-grow-1" id="location-list">
             @foreach (var item in Model)
             {
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 bg-secondary text-white border-0 shadow-lg">
-
-                        <div class="card-img-top bg-dark d-flex align-items-center justify-content-center" style="height: 200px;">
-                            <span class="text-warning display-6">@item.Name[0]</span>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">@item.Name</h5>
-                            <p class="card-text text-light">@item.Description</p>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <small class="text-warning">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    Lat: @item.Latitude, Lon: @item.Longitude
-                                </small>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-dark border-top border-warning">
-                            <a href="#" class="btn btn-outline-warning w-100">Zobrazit detaily</a>
-                        </div>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white border-secondary location-link"
+                   data-id="@item.Id"
+                   data-lat="@item.Latitude"
+                   data-lng="@item.Longitude">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1 text-warning">@item.Name</h6>
                     </div>
-                </div>
+                    <p class="mb-1 small text-muted text-truncate">@item.Description</p>
+                </a>
             }
-        }
-        else
-        {
-            <div class="col-12 text-center">
-                <div class="alert alert-warning">
-                    Zatím nebyly objeveny žádné lokace. (Databáze je prázdná)
-                </div>
-            </div>
-        }
+        </div>
+        <div class="p-2 bg-secondary text-white small text-center">
+            Klikni na mapu pro zjištění souřadnic (Dev Mode)
+        </div>
     </div>
+
+    <div id="firewatch-map" class="flex-grow-1 bg-dark"></div>
+
 </div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script>
+    // --- NASTAVENÍ ROZMĚRŮ MAPY ---
+    // Zde nastavíme velikost tvého obrázku.
+    // Y (výška), X (šířka). Leaflet bere souřadnice jako [Y, X]
+    var imageHeight = 1000;
+    var imageWidth = 1500;
+    var bounds = [[0,0], [imageHeight, imageWidth]];
+
+    // 1. Inicializace mapy
+    var map = L.map('firewatch-map', {
+        crs: L.CRS.Simple,
+        minZoom: -1,
+        maxZoom: 2,
+        zoomControl: false,
+        maxBounds: bounds,          // Nepustí tě ven z obrázku
+        maxBoundsViscosity: 1.0     // Pevná hranice (žádné pružení)
+    });
+
+    // Ovládání zoomu vpravo nahoře
+    L.control.zoom({ position: 'topright' }).addTo(map);
+
+    // 2. Přidání obrázku
+    L.imageOverlay('/images/Firewatch-World-Map-Clean.jpg', bounds).addTo(map);
+
+    // Vycentrování mapy na střed obrázku při startu
+    map.fitBounds(bounds);
+
+    // 3. Načtení dat z C#
+    var locations = @Html.Raw(locationsJson);
+    var markers = {};
+
+    var fireIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+
+    // 4. Vykreslení bodů
+    locations.forEach(function(loc) {
+        var marker = L.marker([loc.Latitude, loc.Longitude], {icon: fireIcon}).addTo(map);
+
+        // Obsah bubliny
+        var popupContent = `
+            <div class='text-center p-2'>
+                <h6 class='fw-bold mb-1'>${loc.Name}</h6>
+                <p class='mb-2 small'>${loc.Description || ''}</p>
+                <a href='/Home/Detail/${loc.Id}' class='btn btn-sm btn-warning text-dark w-100'>Detail</a>
+            </div>
+        `;
+
+        // DŮLEŽITÉ: autoPan: false zajistí, že se mapa nepohne, když klikneš na bod
+        marker.bindPopup(popupContent, { autoPan: false });
+
+        markers[loc.Id] = marker;
+    });
+
+    // 5. Kliknutí na Sidebar (Boční lišta)
+    document.querySelectorAll('.location-link').forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault(); // Zabrání odrolování stránky nahoru (href="#")
+
+            var lat = item.getAttribute('data-lat');
+            var lng = item.getAttribute('data-lng');
+            var id = item.getAttribute('data-id');
+
+            // Plynulý přesun na bod
+            map.flyTo([lat, lng], 1);
+
+            // Otevření bubliny
+            if(markers[id]) {
+                markers[id].openPopup();
+            }
+
+            // Zvýraznění aktivní položky v menu
+            document.querySelectorAll('.location-link').forEach(l => l.classList.remove('active', 'bg-warning', 'text-dark'));
+            item.classList.remove('bg-dark', 'text-white');
+            item.classList.add('active', 'bg-warning', 'text-dark');
+        });
+    });
+
+    // --- POMOCNÍK PRO URČENÍ SOUŘADNIC ---
+    // Když klikneš kamkoliv na mapu, vyskočí ti souřadnice pro zkopírování do C# kódu
+    map.on('click', function(e) {
+        var coordText = `Latitude: ${Math.round(e.latlng.lat)}, Longitude: ${Math.round(e.latlng.lng)}`;
+        console.log(coordText);
+        alert("Zkopíruj si souřadnice:\n" + coordText);
+    });
+
+</script>
+
+<style>
+    /* Vlastní scrollbar pro sidebar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #212529;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+    }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffc107;
+        }
+
+    .leaflet-popup-content-wrapper {
+        border-radius: 0px;
+    }
+</style>

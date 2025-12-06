@@ -103,3 +103,29 @@ body {
 #zoom-reset {
     margin-top: 5px;
 }
+
+/* Oprava pro mapu na celou šíøku */
+.container-fluid-map {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Zmìna barvy scrollbaru pro sidebar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #343a40;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffc107;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #e0a800;
+    }

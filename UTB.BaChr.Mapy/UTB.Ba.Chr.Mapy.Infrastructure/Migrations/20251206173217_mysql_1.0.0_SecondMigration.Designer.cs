@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UTB.BaChr.Mapy.Infrastructure.Database;
 
@@ -11,9 +12,11 @@ using UTB.BaChr.Mapy.Infrastructure.Database;
 namespace UTB.BaChr.Mapy.Infrastructure.Migrations
 {
     [DbContext(typeof(MapyDbContext))]
-    partial class MapyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251206173217_mysql_1.0.0_SecondMigration")]
+    partial class mysql_100_SecondMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -187,32 +190,32 @@ namespace UTB.BaChr.Mapy.Infrastructure.Migrations
                         {
                             Id = 1,
                             Description = "Henryho věž. Hlavní stanoviště s výhledem na Shoshone National Forest.",
-                            Latitude = 313.0,
-                            Longitude = 929.0,
+                            Latitude = 500.0,
+                            Longitude = 750.0,
                             Name = "Two Forks Lookout"
                         },
                         new
                         {
                             Id = 2,
                             Description = "Oplocená biologická výzkumná stanice. Vstup přísně zakázán.",
-                            Latitude = 626.0,
-                            Longitude = 411.0,
+                            Latitude = 300.0,
+                            Longitude = 400.0,
                             Name = "Wapiti Station"
                         },
                         new
                         {
                             Id = 3,
                             Description = "Klidné jezero na úpatí hor. Ideální místo pro odpočinek.",
-                            Latitude = 398.0,
-                            Longitude = 203.0,
+                            Latitude = 700.0,
+                            Longitude = 300.0,
                             Name = "Jonesy Lake"
                         },
                         new
                         {
                             Id = 4,
                             Description = "Věž, kde sídlí Delilah. Viditelná pouze dalekohledem.",
-                            Latitude = 886.0,
-                            Longitude = 830.0,
+                            Latitude = 800.0,
+                            Longitude = 1100.0,
                             Name = "Thorofare Lookout"
                         });
                 });

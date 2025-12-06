@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UTB.BaChr.Mapy.Infrastructure.Database;
 
@@ -11,9 +12,11 @@ using UTB.BaChr.Mapy.Infrastructure.Database;
 namespace UTB.BaChr.Mapy.Infrastructure.Migrations
 {
     [DbContext(typeof(MapyDbContext))]
-    partial class MapyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251206180548_mysql_1.0.0_ThirdMigration")]
+    partial class mysql_100_ThirdMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
